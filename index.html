@@ -3,39 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us - Apex Planet Internship</title>
+    <title>Online Book Store</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>Contact Us</h1>
-      <p>We’d love to hear from you! Fill out the form below.</p>
+      <h1>📚 My Online Book Store</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Books</a>
+        <a href="#">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
     </header>
 
-    <main>
-      <div class="container">
-        <form id="contactForm">
-          <label for="name">Full Name:</label>
-          <input type="text" id="name" placeholder="Enter your full name" />
+    <section id="hero">
+      <h2>Welcome to Your Favorite Book Store</h2>
+      <p>Browse our collection and find your next read.</p>
+    </section>
 
-          <label for="email">Email Address:</label>
-          <input type="email" id="email" placeholder="Enter your email" />
+    <section id="book-list">
+      <h2>Available Books</h2>
+      <div class="books" id="books"></div>
+    </section>
 
-          <label for="message">Your Message:</label>
-          <textarea
-            id="message"
-            placeholder="Type your message here..."
-          ></textarea>
-
-          <button type="submit">Submit</button>
-        </form>
-
-        <p id="formMessage"></p>
-      </div>
-    </main>
+    <section id="cart">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <p id="total">Total: ₹0</p>
+      <button id="clear-cart">Clear Cart</button>
+    </section>
 
     <footer>
-      <p>© 2025 Apex Planet Internship | Designed by Harshith</p>
+      <p>© 2025 Apex Planet Internship Project — Created by Harshith</p>
     </footer>
 
     <script src="script.js"></script>
